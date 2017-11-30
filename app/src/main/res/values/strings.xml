@@ -2,4 +2,6 @@
     <string name="app_name">Dan\'s Photo Editor</string>
     <string name="edit_message">Enter a Message</string>
     <string name="button_send">Send</string>
+    <string name="image1">Show Image 1</string>
+    <string name="image2">Show Image 2</string>
 </resources>

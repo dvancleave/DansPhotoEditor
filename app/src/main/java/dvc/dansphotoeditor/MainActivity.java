@@ -31,12 +31,14 @@ public class MainActivity extends AppCompatActivity {
     private Button button2;
     private Button button3;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceStat) {
         super.onCreate(savedInstanceStat);
         setContentView(R.layout.activity_main);
 
-        this.imageView = (ImageView) this.findViewById(R.id.imageView);
+        this.imageView = this.findViewById(R.id.imageView);
 
         this.button2 = (Button) this.findViewById(R.id.button2);
         this.button3 = (Button) this.findViewById(R.id.button3);
@@ -61,15 +63,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-        private void showImage1() {
-            this.imageView.setImageResource(R.drawable.duck1);
+        public void showImage1() {
+            this.imageView.setBackgroundResource(R.drawable.duck1);
+
 
         }
 
-        private void showImage2(){
-            this.imageView.setImageResource(R.drawable.duck2);
+        public void showImage2(){
+            this.imageView.setBackgroundResource(R.drawable.duck3);
         }
 
 
-
+    public void showImage1(View view) {
+        this.imageView.setBackgroundResource(R.drawable.ic_launcher_foreground);
     }
+}
